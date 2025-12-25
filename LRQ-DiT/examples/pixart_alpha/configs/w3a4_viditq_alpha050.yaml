@@ -1,0 +1,20 @@
+model:
+    model_id: "pixart"
+    model_type: 'pixart' 
+calib_data:
+  save_path: ./calib_data.pth
+remain_fp_regex: embed|norm_out|proj_out|adaln_single|caption_projection
+viditq:
+  alpha: 0.50
+  layer_name_regex: attn|ff
+weight:
+  n_bits: 3
+  sym: false
+act:
+  n_bits: 4
+  sym: true
+
+
+
+
+  
