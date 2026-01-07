@@ -19,6 +19,9 @@ reference resources: viditq-flux.yaml and viditq-pixart.yaml
 
 # Quantization
 ``` bash
+python fp_inference.py
+python get_calib_data.py
+Python quant_inference.py
 bash example.sh
 ``` 
 
@@ -41,5 +44,6 @@ If you find our work helpful, please consider citing:
 
 # Acknowledgments
 Our code was developed based on [ViDiT-Q](https://github.com/thu-nics/ViDiT-Q)
+
 
 
