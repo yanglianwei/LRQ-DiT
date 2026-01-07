@@ -1,13 +1,27 @@
 # LRQ-DiT: Log-Rotation Post-Training Quantization of Diffusion Transformers for Image and Video Generation
 
 
-S1: create env by viditq-flux.yaml and viditq-pixart.yaml
-S2: conda activate env 
-S3: cd ./quant_utils    
-S4: pip install -e .
-S5: chmod u+x /path/………/example.sh
+### Usage
 
-S6: ./example.sh
+We pack the quantization (including viditq methodology as a special case) related code into a standalone python package (located in `quant_utils` folder). It could be easily adapted to existing codebase, by customize a `quant_model` class inherit from the orginal model class deinition. 
+
+# Env Setup
+
+We recommend using conda for enviornment management. For each model in the examples folder, you could refer to the orginal codebase's readme for environment setup, we recommend using independent environment for different models since they may contain conflict package versions. 
+
+Then, for each environment, for the support of quantization **software simulation**, you could install the `qdiff` package by locally install the package in the `./quant_utils` folder. (the `-e` is for editable installation, in case you want to modify the quantization related code.)
+
+```
+cd ./quant_utils
+pip install -e .
+reference resources: viditq-flux.yaml and viditq-pixart.yaml
+```
+
+# Quantization
+``` bash
+bash example.sh
+``` 
+
 
 
 
@@ -26,5 +40,6 @@ If you find our work helpful, please consider citing:
 
 
 # Acknowledgments
-Our code was developed based on [ViDiT-Q](https://github.com/thu-nics/ViDiT-Q)(Apache License), 
+Our code was developed based on [ViDiT-Q](https://github.com/thu-nics/ViDiT-Q)
+
 
