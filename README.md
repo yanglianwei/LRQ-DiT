@@ -39,11 +39,34 @@ If you find our work helpful, please consider citing:
   journal={arXiv preprint arXiv:2508.03485},
   year={2025}
 }
+
+@misc{zhao2024viditq,
+      title={ViDiT-Q: Efficient and Accurate Quantization of Diffusion Transformers for Image and Video Generation}, 
+      author={Tianchen Zhao and Tongcheng Fang and Enshu Liu and Wan Rui and Widyadewi Soedarmadji and Shiyao Li and Zinan Lin and Guohao Dai and Shengen Yan and Huazhong Yang and Xuefei Ning and Yu Wang},
+      year={2024},
+      eprint={2406.02540},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@article{lin2024duquant,
+  title={Duquant: Distributing outliers via dual transformation makes stronger quantized llms},
+  author={Lin, Haokun and Xu, Haobo and Wu, Yichen and Cui, Jingzhi and Zhang, Yingtao and Mou, Linzhan and Song, Linqi and Sun, Zhenan and Wei, Ying},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={87766--87800},
+  year={2024}
+}
 ```
 
 
 # Acknowledgments
-Our code was developed based on [ViDiT-Q](https://github.com/thu-nics/ViDiT-Q)
+Our code was developed based on [ViDiT-Q](https://github.com/thu-nics/ViDiT-Q) and [DuQuant](https://github.com/Hsu1023/DuQuant).
+
+# Reminder 
+More implementation details can be found here: [ViDiT-Q](https://github.com/thu-nics/ViDiT-Q) and [DuQuant](https://github.com/Hsu1023/DuQuant).
+
+
 
 
 
